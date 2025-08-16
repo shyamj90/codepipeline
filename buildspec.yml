@@ -1,13 +1,11 @@
 version: 0.2
-
 phases:
-  install:
-    commands:
-      - echo "nothing to install for static HTML"
   build:
     commands:
-      - echo "Zipping files..."
-      - zip -r app.zip index.html appspec.yml scripts/
+      - echo "Packaging artifact..."
 artifacts:
   files:
-    - app.zip
+    - app.js
+    - package.json
+    - appspec.yml
+    - scripts/**/*
