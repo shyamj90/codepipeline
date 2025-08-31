@@ -5,7 +5,7 @@ phases:
       - echo "Starting build"
   post_build:
    commands:
-      - echo "Build is completed ..copying files to S3"
+      - echo "Build is completed ..copyied files to S3"
 artifacts:
   files:
     - '**/*'
